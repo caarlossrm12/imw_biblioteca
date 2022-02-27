@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+ <meta charset="UTF-8">
+ <title>Modificar sanción</title>
+</head>
+<body>
+<form action="" method="post">
+ <p>
+ <label for="id">id: </label>
+ <input id="id" type="text" name="id" value="<?php echo \htmlentities($sanciones['id'], ENT_QUOTES, 'UTF-8', false); ?>">
+ </p>
+
+ <p>
+ <label for="motivo">Motivo: </label>
+ <input id="motivo" type="text" name="motivo" value="<?php echo \htmlentities($sanciones['motivo'], ENT_QUOTES, 'UTF-8', false); ?>">
+ </p>
+ <p>
+ <input type="hidden" name="id" value="<?php echo \htmlentities($sanciones['id'], ENT_QUOTES, 'UTF-8', false); ?> ">
+ <input type="submit" value="Modificar">
+ </p>
+</form>
+</body>
+</html>
